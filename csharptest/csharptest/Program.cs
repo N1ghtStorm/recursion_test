@@ -12,7 +12,6 @@ namespace csharptest
             some_1(0);
             sw1.Stop();
             Console.WriteLine(sw1.ElapsedTicks);
-
             var sw2 = new Stopwatch();
             sw2.Start();
             var a = 0;
@@ -21,14 +20,12 @@ namespace csharptest
             Console.WriteLine(sw2.ElapsedTicks);
         }
 
-
         static void some_1(int a)
         {
             if (a >= 15000)
             {
                 return;
             }
-
             a++;
             some_1(a);
         }
@@ -39,7 +36,6 @@ namespace csharptest
             {
                 return;
             }
-
             a++;
             some_2(ref a);
         }
